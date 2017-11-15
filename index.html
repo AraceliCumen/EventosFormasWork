@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio Dropdown</title>
+   <!-- Fuentes externas  -->
+
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <!-- Hojas de estilo para este proyecto  -->
+  <link href="css/fontello.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+ <!-- Menú navegador  -->
+
+  <button  id='boton1'> boton 1</button>
+  <button  id='boton2'> boton 2</button>
+  <button  id='boton3'> boton 3</button>
+  <button  id='boton4'> boton 4</button>
+  </ul>
+
+
+ <script>
+
+
+
+
+
+
+   //Forma 1
+document.getElementById("boton1").onclick = function() {myFunction1()};
+
+function myFunction1() {
+    alert('Forma 1');
+}
+
+  //Forma 2
+document.getElementById("boton2").addEventListener("click", myFunction2);
+
+function myFunction2() {
+  alert('Forma 2');
+
+}
+
+  //Forma 3
+
+  window.onload=function(){
+  document.getElementById("boton3").addEventListener("click", myFunction3);
+}
+
+function myFunction3() {
+  alert('Forma 3');
+
+}
+
+
+  //Forma 4
+
+  window.onload=function(){
+  document.getElementById("boton4").addEventListener("click", function myFunction4() {
+  alert('Forma 4');
+
+});
+}
+
+
+
+
+ </script>
+</body>
+</html>
